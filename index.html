@@ -16,13 +16,29 @@
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    <div class="preloader">
-      <div class="preloader-body"> 
-        <div class="cssload-jumping"><span></span><span></span><span></span><span></span><span></span></div>
+
+    <div class="modal" id="projectIdModal" tabindex="-1" role="dialog" aria-hidden="true" style="display:block;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Enter Project ID</h5>
+          </div>
+          <div class="modal-body">
+            <input type="text" id="projectIdInput" class="form-control" placeholder="Enter Project ID" required>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="submitProjectId" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
       </div>
-    </div><a class="banner banner-top" href="https://www.templatemonster.com/website-templates/monstroid2.html" target="_blank"><img src="images/monstroid.jpg" alt="" height="0"></a>
-    <div class="page">
+    </div>
+    
+    <div id="mainContent" style="display: none;" class="page">
+      <div class="preloader">
+        <div class="preloader-body"> 
+          <div class="cssload-jumping"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+      </div>
       <!-- Page Header-->
       <header class="section page-header">
         <!-- RD Navbar-->
@@ -36,7 +52,7 @@
                     <li>
                       <div class="unit unit-spacing-xs align-items-center">
                         <div class="unit-left font-weight-bold">Free Call:</div>
-                        <div class="unit-body"><a href="tel:#">(073) 123-12-12</a></div>
+                        <div class="unit-body"><a href="tel:#" class="link-phone">(073) 123-12-12</a></div>
                       </div>
                     </li>
                     <li>
@@ -66,7 +82,7 @@
                   <!-- RD Navbar Toggle-->
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!-- RD Navbar Brand-->
-                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img src="images/logo-dark-main-257x84.png" alt="" width="257" height="84"/></a></div>
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="dynamicLogo" src="images/logo-dark-main-257x84.png" alt="" width="257" height="84"/></a></div>
                 </div>
                 <div class="rd-navbar-main-element">
                   <div class="rd-navbar-nav-wrap">
@@ -171,14 +187,14 @@
         <div class="container">
           <div class="row row-50 align-items-lg-center justify-content-xl-between">
             <div class="col-lg-6 text-center">
-              <div class="block-parallax-element"><span class="prev-element" data-parallax-scroll="{&quot;y&quot;: -30, &quot;x&quot;: 0,  &quot;smoothness&quot;: 50 }"></span><img src="images/home-1-378x463.jpg" alt="" width="378" height="463"/><span class="next-element" data-parallax-scroll="{&quot;y&quot;: 30, &quot;x&quot;: 0,  &quot;smoothness&quot;: 50 }"></span>
+              <div class="block-parallax-element"><span class="prev-element" data-parallax-scroll="{&quot;y&quot;: -30, &quot;x&quot;: 0,  &quot;smoothness&quot;: 50 }"></span><img class="dynamicAboutUsImage" src="images/home-1-378x463.jpg" alt="" width="378" height="463"/><span class="next-element" data-parallax-scroll="{&quot;y&quot;: 30, &quot;x&quot;: 0,  &quot;smoothness&quot;: 50 }"></span>
               </div>
             </div>
             <div class="col-lg-6 col-xl-5">
-              <h2 class="heading-decorate">Why Our Clients <br><span class="divider"></span>Choose Us
+              <h2 class="heading-decorate">About Us <br>
               </h2>
-              <p class="big text-gray-800">We are the leading beauty salon in LA providing high-quality hairdressing, makeup, and skin care services to everyone.</p>
-              <p class="text-spacing-60">Our clients appreciate and value our level of customer service, the skills of our stylists and estheticians as well as our professional approach to everything we do.</p><a class="button button-primary" href="#">learn more</a>
+              <p class="big text-gray-800 dynamicAboutUsHead">We are the leading beauty salon in LA providing high-quality hairdressing, makeup, and skin care services to everyone.</p>
+              <p class="text-spacing-60 dynamicAboutUsPara">Our clients appreciate and value our level of customer service, the skills of our stylists and estheticians as well as our professional approach to everything we do.</p><a class="button button-primary" href="#">learn more</a>
             </div>
           </div>
         </div>
@@ -332,7 +348,7 @@
         <div class="container">
           <div class="row row-30 align-items-lg-center justify-content-lg-between">
             <div class="col-lg-2">
-              <div class="footer-brand"><a href="index.html"><img src="images/logo-dark-main-257x84.png" alt="" width="257" height="84"/></a></div>
+              <div class="footer-brand"><a href="index.html"><img class="dynamicLogo" src="images/logo-dark-main-257x84.png" alt="" width="257" height="84"/></a></div>
             </div>
             <div class="col-lg-10">
               <div class="footer-nav">
