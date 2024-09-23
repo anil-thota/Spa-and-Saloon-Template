@@ -16,13 +16,30 @@
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    <div class="preloader">
-      <div class="preloader-body"> 
-        <div class="cssload-jumping"><span></span><span></span><span></span><span></span><span></span></div>
+    
+    <div class="modal" id="projectIdModal" tabindex="-1" role="dialog" aria-hidden="true" style="display:block;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Enter Project ID</h5>
+          </div>
+          <div class="modal-body">
+            <input type="text" id="projectIdInput" class="form-control" placeholder="Enter Project ID" required>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="submitProjectId" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
       </div>
-    </div><a class="banner banner-top" href="https://www.templatemonster.com/website-templates/monstroid2.html" target="_blank"><img src="images/monstroid.jpg" alt="" height="0"></a>
-    <div class="page">
+    </div>
+
+
+    <div id="mainContent" style="display: none;" class="page">
+      <div class="preloader">
+        <div class="preloader-body"> 
+          <div class="cssload-jumping"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+      </div>
       <!-- Page Header-->
       <header class="section page-header">
         <!-- RD Navbar-->
@@ -36,7 +53,7 @@
                     <li>
                       <div class="unit unit-spacing-xs align-items-center">
                         <div class="unit-left font-weight-bold">Free Call:</div>
-                        <div class="unit-body"><a href="tel:#">(073) 123-12-12</a></div>
+                        <div class="unit-body"><a href="tel:#" class="link-phone">(073) 123-12-12</a></div>
                       </div>
                     </li>
                     <li>
